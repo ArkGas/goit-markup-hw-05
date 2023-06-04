@@ -62,6 +62,9 @@ header {
   line-height: 1.1;
   letter-spacing: 0.02em;
   text-decoration-line: none;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-property: all;
 }
 .menu-link:hover {
   color: #2196f3;
@@ -76,6 +79,9 @@ header {
   line-height: 1.1;
   letter-spacing: 0.02em;
   text-decoration-line: none;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-property: all;
 }
 .cont-link:hover {
   color: #2196f3;
@@ -126,6 +132,9 @@ section {
   width: 200px;
   height: 50px;
   margin-top: 30px;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-property: all;
 }
 
 .btn-t:hover {
@@ -145,6 +154,9 @@ section {
   cursor: pointer;
   border: none;
   border-radius: 4px;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-property: all;
 }
 
 .btn:hover {
@@ -313,6 +325,10 @@ article:last-child {
   border-right: 1px solid #eeeeee;
   border-bottom: 1px solid #eeeeee;
   margin: 0 auto;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-property: all;
+  position: relative;
 }
 .product-box:hover {
   box-shadow: 4px 6px 0px #00000029;
@@ -332,6 +348,9 @@ article:last-child {
   background-color: rgba(255, 255, 255, 0.1);
   border-radius: 50%;
   fill: #ffffff;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-property: all;
 }
 .social-link:hover,
 .social-link:focus {
@@ -356,6 +375,9 @@ article:last-child {
   border-radius: 50%;
   margin-right: 10px;
   fill: #ffffff;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-property: all;
 }
 
 .social-link-footer:hover,
@@ -375,6 +397,9 @@ article:last-child {
   max-height: 14px;
   fill: currentColor;
   margin-right: 10px;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-property: all;
 }
 
 .icon-cont-e {
@@ -382,6 +407,9 @@ article:last-child {
   max-height: 12px;
   fill: currentColor;
   margin-right: 10px;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-property: all;
 }
 .icon-client {
   max-width: 170px;
@@ -389,6 +417,9 @@ article:last-child {
   fill: #afb1b8;
   border: 1px solid #afb1b8;
   padding: 16px 32px;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-property: all;
 }
 .icon-client:hover {
   fill: #2196f3;
@@ -450,6 +481,7 @@ article:last-child {
   transform: scale(1);
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-property: all;
 }
 .is-hidden {
   opacity: 0;
@@ -519,4 +551,10 @@ article:last-child {
 .hidden-text:hover,
 .hidden-text:focus {
   transform: inherit;
+}
+.hidden-box {
+  overflow: hidden;
+  width: 370px;
+  height: 294px;
+  margin: 0 auto;
 }
