@@ -12,10 +12,6 @@
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
       rel="stylesheet"
     />
-    <link
-      rel="stylesheet"
-      href="node_modules/modern-normalize/modern-normalize.css"
-    />
     <link href=css/styles.css rel=stylesheet>
   </head>
   <body>
@@ -51,7 +47,7 @@
         <div class="container">
           <div class="item-title">
            <h1 class="text-title">EFEKTYWNE ROZWIĄZANIA DLA WASZEGO BIZNESU</h1>
-            <button class="btn-t" type="button">Zamów usługe</button>
+            <button  class="btn-t " type="button" data-modal-open>Zamów usługe</button>
           </div>
         </div>
       </section>
@@ -105,24 +101,35 @@
           <div class="container">
             <div class="what-box">
           <h2 class="what-do">Czym się zajmujemy</h2>
+          <ul class="list-what-do">
+            <li>
           <img
             src="images/czym/night-program.jpg"
             alt="desk with keyboard and tablet"
             width="370"
             height="294"
           />
-          <img
+          <div class="img-text-box">
+                <p class="text-box">APLIKACJE KOMPUTEROWE</p>
+              </div></li>
+          <li><img
             src="images/czym/laptop.jpg"
             alt="laptop and phone"
             width="370"
             height="294"
           />
-          <img
+          <div class="img-text-box">
+                <p class="text-box">APLIKACJE MOBILNE</p>
+              </div></li>
+          <li><img
             src="images/czym/tablet.jpg"
             alt="tablet"
             width="370"
             height="294"
           />
+          <div class="img-text-box">
+                <p class="text-box">ROZWIĄZANIA GRAFICZNE</p>
+              </div></li></ul>
             </div>
           </div>
         </section>
@@ -244,5 +251,11 @@
         </div>
       </section>
     </footer>
+    <div class="backdrop is-hidden" data-modal>
+              <div class="modal">
+                <button class="close-btn" type="button" data-modal-close>X</button>
+              </div>
+            </div>
+    <script src="./js/modal.js"></script>
   </body>
 </html>
