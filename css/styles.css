@@ -468,6 +468,8 @@ article:last-child {
 }
 .client-box-icon {
   display: flex;
+  width: 1170px;
+  justify-content: space-between;
 }
 .flex-footer {
   display: flex;
@@ -572,4 +574,10 @@ article:last-child {
 }
 .social-flex-footer {
   display: flex;
+}
+.client-text {
+  font-size: 36px;
+  line-height: 42px;
+  font-weight: 700;
+  padding-top: 90px;
 }
