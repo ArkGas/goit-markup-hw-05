@@ -351,6 +351,9 @@ article:last-child {
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-property: all;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .social-link:hover,
 .social-link:focus {
@@ -378,6 +381,9 @@ article:last-child {
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-property: all;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .social-link-footer:hover,
@@ -548,8 +554,8 @@ article:last-child {
   transform: translateY(100%);
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.hidden-text:hover,
-.hidden-text:focus {
+.hidden-box:hover,
+.hidden-box:focus {
   transform: inherit;
 }
 .hidden-box {
@@ -557,4 +563,8 @@ article:last-child {
   width: 370px;
   height: 294px;
   margin: 0 auto;
+  position: relative;
+}
+.social-flex-footer {
+  display: flex;
 }
