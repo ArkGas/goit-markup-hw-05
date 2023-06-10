@@ -64,7 +64,6 @@ header {
   text-decoration-line: none;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  transition-property: all;
 }
 .menu-link:hover {
   color: #2196f3;
@@ -81,7 +80,6 @@ header {
   text-decoration-line: none;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  transition-property: all;
 }
 .cont-link:hover {
   color: #2196f3;
@@ -134,7 +132,6 @@ section {
   margin-top: 30px;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  transition-property: all;
 }
 
 .btn-t:hover {
@@ -156,7 +153,6 @@ section {
   border-radius: 4px;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  transition-property: all;
 }
 
 .btn:hover {
@@ -247,6 +243,7 @@ article:last-child {
   text-align: center;
   letter-spacing: 0.03em;
   padding-top: 94px;
+  margin: 0 auto;
 }
 .team-name {
   font-weight: 500;
@@ -331,7 +328,7 @@ article:last-child {
   margin: 0 auto;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  transition-property: all;
+
   position: relative;
 }
 .product-box:hover {
@@ -354,7 +351,7 @@ article:last-child {
   fill: #ffffff;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  transition-property: all;
+
   display: flex;
   justify-content: center;
   align-items: center;
@@ -384,7 +381,7 @@ article:last-child {
   fill: #ffffff;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  transition-property: all;
+
   display: flex;
   justify-content: center;
   align-items: center;
@@ -409,7 +406,6 @@ article:last-child {
   margin-right: 10px;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  transition-property: all;
 }
 
 .icon-cont-e {
@@ -419,7 +415,6 @@ article:last-child {
   margin-right: 10px;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  transition-property: all;
 }
 .icon-client {
   max-width: 170px;
@@ -429,7 +424,6 @@ article:last-child {
   padding: 16px 32px;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  transition-property: all;
 }
 .icon-client:hover {
   fill: #2196f3;
@@ -493,7 +487,6 @@ article:last-child {
   transform: scale(1);
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  transition-property: all;
 }
 .is-hidden {
   opacity: 0;
@@ -551,7 +544,7 @@ article:last-child {
   display: contents;
 }
 .hidden-text {
-  position: relative;
+  position: absolute;
   inset: 0;
   padding: 0.5em;
   width: 370px;
@@ -569,11 +562,15 @@ article:last-child {
 .hidden-box:focus {
   transform: inherit;
 }
+.product-box:hover .hidden-text {
+  transform: translateY(0);
+}
 .hidden-box {
   overflow: hidden;
   width: 370px;
   height: 294px;
   margin: 0 auto;
+  position: relative;
 }
 .social-flex-footer {
   display: flex;
